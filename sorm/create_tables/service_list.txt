@@ -1,0 +1,12 @@
+SRLS_ID
+BIGINT
+ID (уникальный идентификатор) услуги, связан с ABONENTS_SERVICE_LIST.SERVICE_ID (следующая таблица)
+DEF
+VARCHAR2(200)
+Название услуги
+SERV_PARAM
+VARCHAR2(4000)
+Параметры (полное описание) услуги
+REGION_ID
+BIGINT
+ID Региона

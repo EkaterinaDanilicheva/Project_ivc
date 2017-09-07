@@ -1,0 +1,261 @@
+SUBS_ID
+BIGINT
+ID (уникальный идентификатор) клиента (например юр. лицо со всеми филиалами или физ. лицо с несовершеннолетними детьми)
+CLNT_CLNT_ID
+BIGINT
+ID (уникальный идентификатор) абонента зарегистрированного клиента (поле выше) (например ID филиала юр. лица, либо ребенок физ. лица)
+PHONE
+VARCHAR(30)
+Номер телефона
+JUR_TYPE
+BIGINT
+Тип клиента (1 - физ лицо, 2 - юр. лицо)
+CLIENT_STATUS
+BIGINT
+Статус клиента (0 - открыт, 1 - закрыт)
+JUR_ABONENT
+VARCHAR(1000)
+ФИО / Наименование организации
+JUR_CONTACT_PERSON
+VARCHAR(500)
+Контактное лицо от организации
+COMPANY_LEADER_NAME
+VARCHAR(500)
+ФИО руководителя организиции
+JUR_PHONE
+VARCHAR(150)
+Юридический/контактный номер телефона
+JUR_ADDRESS
+VARCHAR(4000)
+Юридический/контактный адрес (полностью)
+JUR_AREA
+VARCHAR(250)
+Юридический/контактный адрес: Область
+JUR_REGION
+VARCHAR(250)
+Юридический/контактный адрес: Район
+JUR_COUNTRY
+VARCHAR(250)
+Юридический/контактный адрес: Страна
+JUR_CITY
+VARCHAR(500)
+Юридический/контактный адрес: Город
+JUR_STREET
+VARCHAR(2000)
+Юридический/контактный адрес: Улица
+JUR_HOUSE
+VARCHAR(240)
+Юридический/контактный адрес: Дом
+JUR_APPARTMENT
+VARCHAR(240)
+Юридический/контактный адрес: Квартира / офис
+JUR_ZIP
+VARCHAR(20)
+Юридический/контактный адрес: Индекс
+JUR_FAX
+VARCHAR(30)
+Юридический/контактный факс
+JUR_E_MAIL
+VARCHAR(500)
+Юридический/контактный e-mail
+OKONH
+VARCHAR(20)
+ОКОНХ
+OKUED
+VARCHAR(20)
+ОКУЕД
+OKPO
+VARCHAR(20)
+ОКПО
+KPP
+VARCHAR(20)
+КПП
+MFO
+VARCHAR(100)
+МФО
+INN
+VARCHAR(30)
+ИНН
+JUR_START_DATE
+DATE
+Дата и время начала действия адреса
+JUR_END_DATE
+DATE
+Дата и время окончания действия адреса
+BANK_NAME
+VARCHAR(500)
+Наименование банка
+BANK_PLACE
+VARCHAR(500)
+Адрес банка
+BANK_ACCOUNT
+VARCHAR(20)
+Расчетный счет организации
+CORR_ACCOUNT
+VARCHAR(20)
+Корреспондентский счет банка
+BANK_INN
+VARCHAR(20)
+ИНН банка
+DLV_ABONENT
+VARCHAR(1000)
+Адрес доставки счета: ФИО / Наименование
+DLV_CONTACT_PERSON
+VARCHAR(500)
+Адрес доставки счета: Контактное лицо
+DLV_PHONE
+VARCHAR(30)
+Адрес доставки счета: Телефон
+DLV_E_MAIL
+VARCHAR(500)
+Адрес доставки счета: email
+DLV_ADDRESS
+VARCHAR(4000)
+Адрес доставки счета (полностью)
+DLV_AREA
+VARCHAR(250)
+Адрес доставки счета: Область
+DLV_REGION
+VARCHAR(250)
+Адрес доставки счета: Район
+DLV_COUNTRY
+VARCHAR(250)
+Адрес доставки счета: Страна
+DLV_CITY
+VARCHAR(250)
+Адрес доставки счета: Город
+DLV_STREET
+VARCHAR(2000)
+Адрес доставки счета: Улица
+DLV_APPARTMENT
+VARCHAR(240)
+Адрес доставки счета: Квартира / Офис
+DLV_HOUSE
+VARCHAR(240)
+Адрес доставки счета: Дом
+DLV_ZIP
+VARCHAR(50)
+Адрес доставки счета: Индекс
+DLV_FAX
+VARCHAR(30)
+Адрес доставки счета: Факс
+DLV_START_DATE
+DATE
+Адрес доставки счета: Дата и время начала действия
+DLV_END_DATE
+DATE
+Адрес доставки счета: Дата и время окончания действия
+LOGIN_USER
+VARCHAR(250)
+Логин
+IP
+VARCHAR(64)
+Статический IP-адрес абонента
+HARD_ADDRESS
+VARCHAR(2000)
+Адрес установки абонентского комплекта (полный)
+FAMILY
+VARCHAR(250)
+Фамилия
+NAME
+VARCHAR(250)
+Имя
+SURNAME
+VARCHAR(250)
+Отчество
+DATE_OF_BIRTH
+DATE
+Дата рождения
+BIRTH_PLACE
+VARCHAR(500)
+Место рождения
+PASSPORT
+VARCHAR(500)
+Номер и серия паспорта, дата и место выдачи одной строкой
+PASS_SER
+VARCHAR(20)
+Серия паспорта
+PASS_NUM
+VARCHAR(30)
+Номер паспорта
+PASS_PLACE
+VARCHAR(500)
+Место выдачи паспорта
+PASS_DATE
+DATE
+Дата выдачи паспорта
+REG_CERTIF
+VARCHAR(300)
+Регистрационный сертификат
+ZONE
+VARCHAR(15)
+Домашняя зона абонента
+RATE_PLAN
+VARCHAR(30)
+Тарифный план
+NAVI_DATE
+DATE
+Дата и время последнего изменения данных
+IMSI
+VARCHAR(30)
+IMSI
+IMEI
+VARCHAR(30)
+IMEI
+ICC
+VARCHAR(20)
+ICC
+PUK1
+VARCHAR(8)
+PUK1
+PUK2
+VARCHAR(8)
+PUK2
+PIN1
+VARCHAR(4)
+PIN1
+PIN2
+VARCHAR(4)
+PIN2
+ATTACH_DATE
+DATE
+Дата подключения абонента
+DETACH_DATE
+DATE
+Дата отключения абонента
+REGION_ID
+BIGINT
+ID региона
+HARD_COUNTRY
+VARCHAR(250)
+Адрес установки абонентского комплекта: Страна
+HARD_AREA
+VARCHAR(250)
+Адрес установки абонентского комплекта: Зона
+HARD_REGION
+VARCHAR(250)
+Адрес установки абонентского комплекта: Регион / Область
+HARD_CITY
+VARCHAR(250)
+Адрес установки абонентского комплекта: Город
+HARD_STREET
+VARCHAR(2000)
+Адрес установки абонентского комплекта: Улица
+HARD_HOUSE
+VARCHAR(240)
+Адрес установки абонентского комплекта: Дом
+HARD_APPARTMENT
+VARCHAR(240)
+Адрес установки абонентского комплекта: Квартира / Офис
+HARD_ZIP
+VARCHAR(50)
+Адрес установки абонентского комплекта: Индекс
+ACCOUNT
+VARCHAR(500)
+Список лицевых счетов через разделитель "перевод строки", заполняется черз внешний справочник "Список лицевых счетов"
+CONTRACT_NUM
+VARCHAR(1000)
+Номер договора
+DEALER
+VARCHAR(1000)
+Наименование дилера

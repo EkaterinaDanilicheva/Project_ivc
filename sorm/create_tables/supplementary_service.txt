@@ -1,0 +1,21 @@
+SERVICE_ID
+BIGINT
+ID (уникальный идентификатор) услуги ДВО цифровой (primary key)
+BIGINT_HISTORY
+BIGINT
+Номер изменения, чем больше - тем новее, (primary key)
+MNEMONIC
+VARCHAR2(10)
+Код услуги ДВО, символьный
+BEGIN_TIME
+DATE
+Дата начала действия услуги ДВО
+END_TIME
+DATE
+Дата окончания действия услуги ДВО
+DESCRIPTION
+VARCHAR2(265)
+Параметры (полное описание) услуги ДВО
+REGION_ID
+BIGINT
+ID Региона

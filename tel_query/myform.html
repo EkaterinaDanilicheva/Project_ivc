@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>tel_query_form</title>
+  <link rel="stylesheet" href="style.css">
+<!-- Подключаем библеотеку jQuery, которая хранится на сервере Яндекса -->
+<script src="http://yandex.st/jquery/1.10.2/jquery.min.js"></script>
+<!-- Подключаем файл со своим собственным скриптом -->
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <form action="main.php" class="forma">
+
+    <h1>tel query form</h1>
+    
+    <label>Год </label><input type="text" id="y" name="Year" value="" class="forma-input" required placeholder="Год" autofocus autocomplete="off" maxlength="4"><br>
+    <label>С </label><input type="text" name="Month_beg" class="forma-input" required placeholder="С какого месяца" autocomplete="off" maxlength="2"><br>
+    <label>До </label><input type="text" name="Month_end" class="forma-input" placeholder="По какой месяц" autocomplete="off" maxlength="2"><br>
+    <label>Направления</label><div class="forma-checkbox"><input type="checkbox" id="flag"><label for="flag"></label></div></br>
+    <select id="select" name="descr" disabled class="forma-input">
+		<option value="0">Выберите из списка</option>
+    </select></br>
+    <input type="submit" value="OK" class="forma-submit">
+<script src="script.js">get_cookie ( 'Year' )</script>
+  </form>
+
+</body>
+</html>
